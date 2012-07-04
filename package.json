@@ -6,6 +6,7 @@
     "type": "git",
     "url": "git://github.com/hatchan/shutdown.git"
   },
+  "main": "./main.js",
   "dependencies": {},
   "devDependencies": {},
   "optionalDependencies": {},
