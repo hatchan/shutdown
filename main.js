@@ -30,7 +30,7 @@ var handleShutdown = function (req, res, next) {
 
 var middleware = function (options) {
   "use strict";
-  var options = options || {};
+  options = options || {};
   if (!options.secret) {
     throw new Error('A \'secret\' is required for security');
   }
@@ -47,7 +47,7 @@ var middleware = function (options) {
     else {
       next();
     }
-  }
+  };
 };
 
 var registerTask = function(name) {
