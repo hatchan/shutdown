@@ -84,6 +84,12 @@ module.exports = {
   'middleware':middleware,
   'registerTask':registerTask,
   'reset': reset,
-  'isShutdown': function() {return isShutdown;},
-  'isShuttingDown': function() {return isShuttingDown;}
+  'isShutdown': function() {
+    "use strict";
+    return isShutdown;
+  },
+  'isShuttingDown': function() {
+    "use strict";
+    return isShuttingDown;
+  }
 };
