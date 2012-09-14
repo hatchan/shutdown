@@ -37,11 +37,11 @@ var middleware = function (options) {
 
   return function (req, res, next) {
     if (/^\/_shutdown/.test(req.url)) {
-      if (req.query.secret !== options.secret) {
+      if (req.query.secret === options.secret) {
         handleShutdown(req, res, next);
       }
       else {
-        res.end(403);
+        res.send('',403);
       }
     }
     else {
